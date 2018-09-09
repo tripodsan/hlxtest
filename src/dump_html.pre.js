@@ -16,15 +16,11 @@
  *
  */
 
-// the most compact way to write a html.pre.js:
-//
-// module.exports.pre is a function (taking next as an argument)
-// that returns a function (with payload, secrets, logger as arguments)
-// that calls next (after modifying the payload a bit)
-module.exports.pre = next => (payload, secrets, logger) => {
-  const mypayload = Object.assign({}, payload);
-
-  mypayload.resource.time = `${new Date()}`;
-
-  return next(mypayload, secrets, logger);
+module.exports.pre = (payload, config) => {
+  payload.dump = "foo" + JSON.stringify(payload.request, null, "  ");
+  if (config) {
+    payload.dump += 'config:' + JSON.stringify(Object.keys(config), null, "  ");
+  } else {
+    payload.dump += 'no config';
+  }
 };

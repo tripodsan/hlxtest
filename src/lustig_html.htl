@@ -19,14 +19,13 @@
 <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <link rel="shortcut icon" type="image/x-icon" href="static/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="/dist/favicon.ico">
     <title>${it.resource.title}</title>
-    <link rel="stylesheet" href="static/bootstrap.min.css"/>
-    <script src="static/scripts.js"></script>
+    <link rel="stylesheet" href="/dist/bootstrap.min.css"/>
 </head>
 <body>
 
-<h1>Lars was here</h1>
+<h1>lustig Lars was here</h1>
 <div data-sly-list="${it.resource.children}">
     <div class="container-fluid">${item}</div>
 </div>

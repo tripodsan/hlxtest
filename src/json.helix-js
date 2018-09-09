@@ -1,0 +1,5 @@
+
+module.exports.main = async function main(resource) {
+  console.log(resource);
+  return { body: resource.json };
+}
