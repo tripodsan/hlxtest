@@ -5,3 +5,7 @@ pipeline.log
 logs
 .wskprops
 .hlxenv
+/keyrings/live/pubring.gpg~
+/keyrings/live/pubring.kbx~
+/keyrings/live/secring.gpg
+/.github/helix-bot.yaml
