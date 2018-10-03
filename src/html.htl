@@ -26,13 +26,12 @@
 </head>
 <body>
 
-<h1>Lars was here</h1>
+<h1>Tobi was here</h1>
 <div data-sly-list="${content.children}">
     <div class="container-fluid">${item}</div>
 </div>
-
 <div class="container-fluid">
-    <em>generated at ${content.time}</em>
+    <em>generated at ${content.time}</em> ?
 </div>
 
 </body>

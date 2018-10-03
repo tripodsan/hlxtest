@@ -8,7 +8,7 @@
     "test": "hlx test"
   },
   "dependencies": {
-    "@adobe/helix-logger": "^1.0.0",
+    "@adobe/helix-logger": "^1.0.0"
   },
   "license": "Apache-2.0"
 }
