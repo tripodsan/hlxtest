@@ -1,0 +1,9 @@
+- strain:
+    name: default
+    code: /tripod/default/git-github-com-tripodsan-hlxtest-git--master--
+    url: https://www.99productrules.com/help
+    content:
+      repo: hlxtest
+      ref: master
+      owner: tripodsan
+      root: /docs
