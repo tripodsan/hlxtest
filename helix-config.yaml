@@ -8,13 +8,14 @@ title: 'hlxtest'
 # Specifies the git url to the content repository. helix will use the local directory if
 # not configured.
 #
-default:
-  content:
-    repo: hlxtest
-    ref: master
-    owner: tripodsan
-  static:
-    repo: hlxtest
-    ref: master
-    owner: tripodsan
-    path: /webroot
+strains:
+  default:
+    content:
+      repo: hlxtest
+      ref: master
+      owner: tripodsan
+    static:
+      repo: hlxtest
+      ref: master
+      owner: tripodsan
+      path: /webroot
