@@ -8,6 +8,5 @@ title: 'hlxtest'
 # Specifies the git url to the content repository. helix will use the local directory if
 # not configured.
 #
-#contentRepo: https://github.com/tripodsan/hlxtest-content
-#content: https://github.com/tripodsan/hlxtest.git
+content: https://github.com/tripodsan/hlxtest.git
 staticRoot: /webroot
