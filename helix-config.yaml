@@ -9,4 +9,5 @@ title: 'hlxtest'
 # not configured.
 #
 #contentRepo: https://github.com/tripodsan/hlxtest-content
-contentRepo: https://github.com/tripodsan/hlxtest
+#content: https://github.com/tripodsan/hlxtest.git
+staticRoot: /webroot

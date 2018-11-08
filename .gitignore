@@ -1,5 +1,4 @@
-.hlx/build
-.hlx/cache
+.hlx
 .cache/
 node_modules/
 pipeline.log
