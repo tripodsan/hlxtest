@@ -19,7 +19,6 @@
 module.exports.pre = (payload, config) => {
 
   payload.dump = "foo" + JSON.stringify(Object.keys(payload), null, "  ");
-  payload.dump += "foo" + JSON.stringify(Object.keys(payload.resource), null, "  ");
   if (config) {
     payload.dump += 'config:' + JSON.stringify(Object.keys(config), null, "  ");
   } else {
