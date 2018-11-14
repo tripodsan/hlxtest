@@ -11,10 +11,14 @@ title: 'hlxtest'
 strains:
   default:
     content:
+      protocol: https
+      hostname: github.com
       repo: hlxtest
       ref: master
       owner: tripodsan
     static:
+      protocol: https
+      hostname: github.com
       repo: hlxtest
       ref: master
       owner: tripodsan
