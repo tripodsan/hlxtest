@@ -15,10 +15,10 @@
  * limitations under the License.
  *
  */
-const fs = require('fs');
-const winston = require('winston');
-
 module.exports.pre = (payload, config) => {
-  payload.content.time = new Date() + winston;
-  payload.content.pkg = fs.readFileSync('package.json');
+  return {
+    response: {
+      body: "foo"
+    }
+  }
 };
