@@ -17,8 +17,10 @@
  */
 const fs = require('fs');
 const winston = require('winston');
+const { utils } = require('./helper.js');
 
 module.exports.pre = (payload, config) => {
   payload.content.time = new Date() + winston;
   payload.content.pkg = fs.readFileSync('package.json');
+  payload.content.stamp = utils.stamp();
 };

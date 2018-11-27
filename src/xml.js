@@ -15,10 +15,12 @@
  * limitations under the License.
  *
  */
-module.exports.pre = (payload, config) => {
+const fs = require('fs');
+const winston = require('winston');
+
+module.exports.main = async (payload, config) => {
   return {
-    response: {
-      body: "foo"
-    }
+    body: "<xml>works</xml>",
   }
 };
+
