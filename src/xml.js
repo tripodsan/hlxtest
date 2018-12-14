@@ -20,7 +20,18 @@ const winston = require('winston');
 
 module.exports.main = async (payload, config) => {
   return {
-    body: "<xml>works</xml>",
+    response: {
+      headers: {
+        'Content-Type': 'text/xml',
+      },
+      body: `<?xml version="1.0" encoding="UTF-8"?>
+<note>
+  <to>Peach</to>
+  <from>Mario</from>
+  <heading>Reminder</heading>
+  <body>Don't forget me this weekend!</body>
+</note>`,
+    }
   }
 };
 
