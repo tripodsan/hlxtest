@@ -15,8 +15,8 @@
   ~ limitations under the License.
   -->
   
-Helix - hlxtest
-=======================
+# Helix - hlxtest
+
 
 Welcome to Helix. This is a started project to get you going with helix.
 You will find some example templates in the `src` directory. 
