@@ -9,3 +9,4 @@ logs
 /keyrings/live/pubring.kbx~
 /keyrings/live/secring.gpg
 /.github/helix-bot.yaml
+helix-config.yaml.old

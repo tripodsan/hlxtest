@@ -2,23 +2,12 @@
 # helix configuration for local development
 #
 
-# title of this project. not really needed
-title: 'hlxtest'
+definitions:
+  repos:
+    - &myRepo https://github.com/tripodsan/hlxtest.git#master
 
-# Specifies the git url to the content repository. helix will use the local directory if
-# not configured.
-#
-#strains:
-#  default:
-#    content:
-#      protocol: https
-#      hostname: github.com
-#      repo: hlxtest
-#      ref: master
-#      owner: tripodsan
-#    static:
-#      protocol: https
-#      hostname: github.com
-#      repo: hlxtest
-#      ref: master
-#      owner: tripodsan
+strains:
+  default:
+    content: *myRepo
+    code: *myRepo
+    static: *myRepo
