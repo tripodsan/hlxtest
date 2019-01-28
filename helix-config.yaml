@@ -5,9 +5,23 @@
 definitions:
   repos:
     - &myRepo https://github.com/tripodsan/hlxtest.git#master
-
+    - &defaultRepo "http://localhost/local/default.git"
+    -
 strains:
-  default:
+  dev:
+    url: http://localhost:3000/
+    code: *defaultRepo
+    content: *defaultRepo
+    static: *defaultRepo
+
+  dev-ip:
+    url: http://127.0.0.1:3000/
+    code: *defaultRepo
     content: *myRepo
-    code: *myRepo
     static: *myRepo
+
+  default:
+    code: *myRepo
+    content: *myRepo
+    static: https://github.com/tripodsan/hlxtest.git/htdocs#master
+    package: fffb7c8a15357319b56b19f8cd4002542fec3f0b
