@@ -27,12 +27,14 @@
 <body>
 
 <h1>Tobi was here</h1>
-<div data-sly-list="${content.children}">
-    <div class="container-fluid">${item}</div>
-</div>
+<!--/*<div data-sly-list="${content.children}">*/-->
+    <!--/*<div class="container-fluid">${item}</div>*/-->
+<!--/*</div>*/-->
 <div class="container-fluid">
-    <em>generated at ${content.time}</em> ?
-    <xmp>${content.pkg}</xmp>
+    <h3>payload.request</h3>
+    <xmp>${content.payload}</xmp>
+    <h3>action.request</h3>
+    <xmp>${content.action}</xmp>
 </div>
 </body>
 </html>

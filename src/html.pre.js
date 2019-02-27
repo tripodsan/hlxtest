@@ -15,12 +15,9 @@
  * limitations under the License.
  *
  */
-const fs = require('fs');
-const winston = require('winston');
-const { utils } = require('./helper.js');
+const helper = require('./helper');
 
-module.exports.pre = (payload, config) => {
-  payload.content.time = new Date() + winston;
-  payload.content.pkg = fs.readFileSync('package.json');
-  payload.content.stamp = utils.stamp();
+module.exports.pre = (payload, action) => {
+  payload.content.payload = JSON.stringify(payload.request, null, '  ');
+  payload.content.action = JSON.stringify(action.request, null, '  ');
 };
