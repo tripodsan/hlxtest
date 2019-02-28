@@ -15,7 +15,7 @@
  * limitations under the License.
  *
  */
-const helper = require('./helper');
+const helper = require('./helper.js');
 
 module.exports.pre = (payload, action) => {
   payload.content.payload = JSON.stringify(payload.request, null, '  ');
