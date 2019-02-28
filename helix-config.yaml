@@ -5,6 +5,7 @@
 definitions:
   repos:
     - &myRepo https://github.com/tripodsan/hlxtest.git#master
+    - &myFooRepo https://github.com/tripodsan/hlxtest.git#foo/bar
     - &defaultRepo "http://localhost/local/default.git"
 
 strains:
@@ -29,7 +30,7 @@ strains:
   subtest:
     url: https://www.99productrules.com/api/general
     code: *myRepo
-    content: *myRepo
+    content: *myFooRepo
     static: https://github.com/tripodsan/hlxtest.git/htdocs#master
     params:
       - a

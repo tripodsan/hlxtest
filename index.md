@@ -16,7 +16,7 @@
   -->
 ![helix-logo](./helix_logo.png)
 
-Helix - hlxtest
+Helix - hlxtest (on master)
 =======================
 
 It works!
