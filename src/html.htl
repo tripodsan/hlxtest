@@ -26,7 +26,7 @@
 </head>
 <body>
 
-<h1>Tobi was here (master)</h1>
+<h1>Tobi was here</h1>
 <!--/*<div data-sly-list="${content.children}">*/-->
     <!--/*<div class="container-fluid">${item}</div>*/-->
 <!--/*</div>*/-->
