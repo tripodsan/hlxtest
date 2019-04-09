@@ -4,45 +4,18 @@
 
 definitions:
   repos:
-    - &myRepo https://github.com/tripodsan/hlxtest.git#master
-    - &myFooRepo https://github.com/tripodsan/hlxtest.git#foo/bar
-    - &defaultRepo "http://localhost/local/default.git"
+    - &defaultRepo https://github.com/tripodsan/hlxtest.git#master
+    - &contentRepo https://github.com/tripodsan/hlxtest-content.git#master
 
 strains:
-  dev-subtest:
-    url: http://localhost:3000/api/general
-    code: *defaultRepo
-    content: *defaultRepo
-    static: *defaultRepo
-
-  dev:
-    url: http://localhost:3000/
-    code: *defaultRepo
-    content: *defaultRepo
-    static: *defaultRepo
-
-  dev-ip:
-    url: http://127.0.0.1:3000/
-    code: *defaultRepo
-    content: *defaultRepo
-    static: *defaultRepo
-
-  subtest:
+  - name: api
     url: https://www.99productrules.com/api/general
-    code: *myRepo
-    content: *myFooRepo
-    static: https://github.com/tripodsan/hlxtest.git/htdocs#master
-    params:
-      - a
-      - foo
-    package: tripod/github-com--tripodsan--hlxtest--master-dirty
+    code: *defaultRepo
+    content: *contentRepo
+    static: *defaultRepo
 
-  default:
-    code: *myRepo
-    content: *myRepo
-    static: https://github.com/tripodsan/hlxtest.git/htdocs#master
-    params:
-      - a
-      - foo
-    package: tripod/github-com--tripodsan--hlxtest--master-dirty
-
+  - name: default
+    url: https://www.99productrules.com
+    code: *defaultRepo
+    content: *defaultRepo
+    static: *defaultRepo
