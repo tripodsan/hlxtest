@@ -1,9 +1,10 @@
 
 
-module.exports.main = (payload, action) => {
+module.exports.main = (context, action) => {
+  context.request.headers.authorization = 'xxx';
   return {
     response: {
-      body: payload
+      body: context
     }
   };
 };

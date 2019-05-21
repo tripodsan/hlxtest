@@ -30,9 +30,11 @@
 <!--/*<div data-sly-list="${content.children}">*/-->
     <!--/*<div class="container-fluid">${item}</div>*/-->
 <!--/*</div>*/-->
+${global.payload.content.title}
+
 <div class="container-fluid">
-    <h3>payload.request</h3>
-    <xmp>${content.payload}</xmp>
+    <h3>context.request</h3>
+    <xmp>${content.request}</xmp>
     <h3>action.request</h3>
     <xmp>${content.action}</xmp>
     <h3>content</h3>

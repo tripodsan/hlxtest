@@ -9,13 +9,32 @@ definitions:
 
 strains:
   - name: api
-    url: https://www.99productrules.com/api/general
+    url: https://www.99productrules.com/api
+    code: *defaultRepo
+    content: https://github.com/tripodsan/hlxtest.git/docs#master
+    static: https://github.com/tripodsan/hlxtest.git/htdocs#master
+    package: tripod/github-com--tripodsan--hlxtest--master-dirty
+    directoryIndex: introduction.html
+
+  - name: stage
+    url: https://www.99productrules.com/api
+    code: *defaultRepo
+    content: https://github.com/tripodsan/helix-publish.git/docs#master
+    static: https://github.com/tripodsan/hlxtest.git/htdocs#master
+    package: tripod/github-com--tripodsan--hlxtest--master-dirty
+    directoryIndex: introduction.html
+
+  - name: help
+    url: https://www.99productrules.com/help
     code: *defaultRepo
     content: *contentRepo
-    static: *defaultRepo
+    static: https://github.com/tripodsan/hlxtest.git/htdocs#master
+    package: tripod/github-com--tripodsan--hlxtest--master-dirty
+    directoryIndex: introduction.html
 
   - name: default
-    url: https://www.99productrules.com
+    url: https://www.99productrules.com/
     code: *defaultRepo
     content: *defaultRepo
-    static: *defaultRepo
+    static: https://github.com/tripodsan/hlxtest.git/htdocs#master
+    package: tripod/github-com--tripodsan--hlxtest--master-dirty

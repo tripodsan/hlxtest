@@ -17,7 +17,35 @@
  */
 const helper = require('./helper.js');
 
-module.exports.pre = (payload, action) => {
-  payload.content.payload = JSON.stringify(payload.request, null, '  ');
-  payload.content.action = JSON.stringify(action.request, null, '  ');
+function safeCycles() {
+  const seen = [];
+  function guardCycles(_, v) {
+    if (!v || typeof (v) !== 'object') {
+      return (v);
+    }
+    if (seen.indexOf(v) !== -1) {
+      return ('[Circular]');
+    }
+    seen.push(v);
+    return (v);
+  }
+  return guardCycles;
+}
+
+module.exports.pre = (context, action) => {
+  context.request.headers.authorization = 'xxx';
+  context.content.request = JSON.stringify(context.request, null, '  ');
+  context.content.action = JSON.stringify(action, safeCycles(), '  ');
+};
+
+module.exports.after = {
+  html: (context) => {
+    return {
+      response: {
+        headers: {
+          'Cache-Control': 'private',
+        }
+      }
+    };
+  }
 };
