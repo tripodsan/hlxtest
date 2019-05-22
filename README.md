@@ -33,3 +33,4 @@ $ hlx up
 and open your browser at http://localhost:3000/.
 Wed May 22 09:20:29 CEST 2019
 Wed May 22 10:57:08 CEST 2019
+Wed May 22 11:20:29 CEST 2019
