@@ -31,3 +31,4 @@ $ hlx up
 ```
 
 and open your browser at http://localhost:3000/.
+Wed May 22 09:20:29 CEST 2019
