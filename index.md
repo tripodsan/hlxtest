@@ -21,9 +21,3 @@ Helix - hlxtest (on master)
 
 It works!
 ----------
-Tue Mar 26 16:51:58 JST 2019
-Tue Mar 26 16:52:59 JST 2019
-Tue Mar 26 16:55:49 JST 2019
-Tue Mar 26 18:14:09 JST 2019
-Tue Mar 26 18:25:22 JST 2019
-Mon Apr  1 16:44:45 JST 2019
