@@ -15,7 +15,9 @@
  * limitations under the License.
  *
  */
-const helper = require('./helper.js');
+const { utils } = require('./helper.js');
+const jquery = require('jquery');
+const icons = require('./icons/spectrum.svg.js');
 
 function safeCycles() {
   const seen = [];
@@ -33,9 +35,23 @@ function safeCycles() {
 }
 
 module.exports.pre = (context, action) => {
-  context.request.headers.authorization = 'xxx';
+  // context.request.headers.authorization = 'xxx';
   context.content.request = JSON.stringify(context.request, null, '  ');
   context.content.action = JSON.stringify(action, safeCycles(), '  ');
+  context.content.now = utils.stamp();
+  const { document } = context.content;
+  const $ = jquery(document.defaultView);
+  const $sections = $(document).find('h1');
+
+  const template = document.createElement('template');
+  template.innerHTML = icons;
+  const svg = template.content;
+  context.content.icons = document.createElement('svg');
+  context.content.icons.appendChild(svg.getElementById('spectrum-icon-24-GitHub'));
+
+  $sections
+    .addClass('default');
+
 };
 
 module.exports.after = {

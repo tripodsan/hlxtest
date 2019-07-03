@@ -25,20 +25,24 @@
     <script src="/dist/scripts.js"></script>
 </head>
 <body>
-
-<h1>Tobi was here</h1>
+${content.icons}
+<h1>Tobi was here ${content.now}</h1>
 <!--/*<div data-sly-list="${content.children}">*/-->
     <!--/*<div class="container-fluid">${item}</div>*/-->
 <!--/*</div>*/-->
 ${global.payload.content.title}
+<svg class="spectrum-Icon spectrum-Icon--sizeM" focusable="false" aria-hidden="true" aria-label="GitHub">
+    <use xlink:href="#spectrum-icon-24-GitHub"></use>
+</svg>
 
 <div class="container-fluid">
+    ${content.document.body}
     <h3>context.request</h3>
     <xmp>${content.request}</xmp>
     <h3>action.request</h3>
     <xmp>${content.action}</xmp>
-    <h3>content</h3>
-    ${content.document.body.innerHTML}
+    <h3>content.sources</h3>
+    <xmp>${content.sources}</xmp>
 </div>
 </body>
 </html>
