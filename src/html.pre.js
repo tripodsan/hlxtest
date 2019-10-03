@@ -17,7 +17,6 @@
  */
 const { utils } = require('./helper.js');
 const jquery = require('jquery');
-const icons = require('./icons/spectrum.svg.js');
 
 function safeCycles() {
   const seen = [];
@@ -42,16 +41,8 @@ module.exports.pre = (context, action) => {
   const { document } = context.content;
   const $ = jquery(document.defaultView);
   const $sections = $(document).find('h1');
-
-  const template = document.createElement('template');
-  template.innerHTML = icons;
-  const svg = template.content;
-  context.content.icons = document.createElement('svg');
-  context.content.icons.appendChild(svg.getElementById('spectrum-icon-24-GitHub'));
-
   $sections
     .addClass('default');
-
 };
 
 module.exports.after = {

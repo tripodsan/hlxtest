@@ -1,9 +1,8 @@
 
 
 module.exports.main = (context, action) => {
-
   const tables = {
-    'foo': 43,
+    'foo': 42,
   };
 
   return {

@@ -25,7 +25,6 @@
     <script src="/dist/scripts.js"></script>
 </head>
 <body>
-${content.icons}
 <h1>Tobi was here ${content.now}</h1>
 <!--/*<div data-sly-list="${content.children}">*/-->
     <!--/*<div class="container-fluid">${item}</div>*/-->

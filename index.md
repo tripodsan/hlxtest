@@ -19,6 +19,8 @@
 Helix - hlxtest (on master)
 =======================
 
+Checkout the [readme](./README.md) or the [docs](./docs/index.md).
+
 It works!
 ----------
 Tue Jun 18 10:48:31 JST 2019
