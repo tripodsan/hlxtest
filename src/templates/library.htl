@@ -1,0 +1,2 @@
+<sly data-sly-use.lib="./button.htl"></sly>
+<sly data-sly-use.lib="./heading.htl"></sly>

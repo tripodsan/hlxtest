@@ -1,0 +1,3 @@
+<template data-sly-template.button="${@ text}">
+    <button>${text}</button>
+</template>

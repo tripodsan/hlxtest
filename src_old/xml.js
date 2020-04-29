@@ -15,9 +15,6 @@
  * limitations under the License.
  *
  */
-const fs = require('fs');
-const winston = require('winston');
-
 module.exports.main = async (payload, config) => {
   return {
     response: {
