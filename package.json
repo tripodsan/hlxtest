@@ -21,6 +21,6 @@
   "homepage": "https://github.com/tripodsan/hlxtest#readme",
   "dependencies": {
     "@adobe/helix-pipeline": "^6.5.2",
-    "jquery": "^3.4.1"
+    "jquery": "^3.5.0"
   }
 }
