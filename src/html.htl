@@ -22,11 +22,12 @@
     <link rel="shortcut icon" type="image/x-icon" href="/dist/favicon.ico">
     <title>${content.title}</title>
     <link rel="stylesheet" href="/dist/bootstrap.min.css"/>
+    <link rel="stylesheet" href="/dist/style.css"/>
     <script src="/dist/scripts.js"></script>
     <esi:include src="/head.html" onerror="continue"/>
 </head>
 <body>
-<h1>Tobi was here ${content.now}</h1>
+<h1>${content.now}</h1>
 <sly data-sly-use.lib="./templates/library.htl"></sly>
 <sly data-sly-call="${lib.button @ text='foo'}"></sly>
 <sly data-sly-call="${lib.heading @ text=content.title}"></sly>
