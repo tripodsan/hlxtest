@@ -1,0 +1,18 @@
+on:
+  pull_request:
+    types: [opened, labeled, unlabeled, synchronize, reopened]
+    branches-ignore:
+      - master
+
+jobs:
+  block_label:
+    runs-on: ubuntu-latest
+    name: Check for label
+    steps:
+      - name: Trigger
+        id: trigger
+        uses: adobe-rnd/github-label-wip-action@master
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          label: breaking
+
