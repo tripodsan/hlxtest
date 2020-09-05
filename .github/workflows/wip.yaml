@@ -1,6 +1,5 @@
 on:
   pull_request:
-    types: [opened, labeled, unlabeled, synchronize, reopened]
     branches-ignore:
       - master
 
