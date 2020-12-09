@@ -1,8 +1,15 @@
 name: Auto Approve
 
+#on:
+#  pull_request:
+#    types: [opened, synchronize, reopened]
 on:
-  pull_request:
-    types: [opened, synchronize, reopened]
+  workflow_run:
+    workflows: ["Build"]
+    branches-ignore:
+      - master
+    types:
+      - completed
 
 jobs:
   auto-approve:
