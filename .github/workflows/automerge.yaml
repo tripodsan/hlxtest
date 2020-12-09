@@ -12,6 +12,6 @@ jobs:
         # only run on releases/*
         # Note: for some reason limiting the branches in the 'on' above doesn't work
         #if: startsWith(github.head_ref, 'releases/')
-        uses: adobe-rnd/github-automerge-action
+        uses: adobe-rnd/github-automerge-action@master
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
