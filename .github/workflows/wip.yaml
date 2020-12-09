@@ -10,7 +10,7 @@ jobs:
     steps:
       - name: Trigger
         id: trigger
-        uses: adobe-rnd/github-label-wip-action@1.0.1
+        uses: adobe-rnd/github-label-wip-action@master
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
           label: breaking
