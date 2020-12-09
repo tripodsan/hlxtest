@@ -11,7 +11,7 @@ name: Auto Approve
 #    types:
 #      - completed
 on:
-  check_suite:
+  check_run:
     types: [completed]
 
 jobs:
