@@ -7,7 +7,7 @@
     "doc": "docs"
   },
   "scripts": {
-    "test": "echo \"hmm... no tests, all good\" && exit 0"
+    "test": "echo \"hmm... no tests, all good\" && exit 1"
   },
   "repository": {
     "type": "git",
