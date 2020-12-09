@@ -1,7 +1,6 @@
 on:
   pull_request:
-    branches-ignore:
-      - master
+    types: [opened, synchronize, reopened, labeled, unlabeled]
 
 jobs:
   block_label:
@@ -10,7 +9,7 @@ jobs:
     steps:
       - name: Trigger
         id: trigger
-        uses: adobe-rnd/github-label-wip-action@master
+        uses: adobe-rnd/github-label-wip-action
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
           label: breaking
