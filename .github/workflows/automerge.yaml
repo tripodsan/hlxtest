@@ -12,8 +12,7 @@ name: Auto Approve
 #      - completed
 on:
   check_suite:
-    types:
-      - completed
+    types: [completed]
     branches-ignore:
       - master
 
