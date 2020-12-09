@@ -6,6 +6,7 @@ on:
 
 jobs:
   auto-approve:
+    name: Auto Approve
     runs-on: ubuntu-latest
     steps:
       - name: Auto Approve on ${{ github.head_ref }}
