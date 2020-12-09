@@ -5,7 +5,7 @@ on:
     types: [opened, synchronize, reopened]
 
 jobs:
-  build:
+  auto-approve:
     runs-on: ubuntu-latest
     steps:
       - name: Auto Approve on ${{ github.head_ref }}
